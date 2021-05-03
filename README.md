@@ -27,7 +27,7 @@ Once the app is connected with Firebase, to connect it with GTM, follow these st
 <li>Once all this is setup call <b>firebase.analytics()</b> function in react-native to send data to GTM.</li>
 </ol>
 
-## Preserving cliendID between web and app views
+## Preserving clientId between web and app views
 This app demonstrates how the clientID of a React Native app can be preserved within a webview in order to prevent creating two users/sessions being created when a user switches to a Webview inside the app.  
 
 Once a auto-generated clientId is generated (a GUID for example), the clientId of the app is set to a pre-defined value based on the command: `firebase.analytics().setUserProperty("app_cid", clientId);`
